@@ -63,7 +63,7 @@ int main(int argc, char **argv){
   tl->Draw();
   c1->Draw();
 
-  // retreive the data from the graphs an write to a file
+  // retreive the data from the graphs and write to a file
   FILE *fp=fopen("RKdemo.dat","w");
   double *x, *y1, *y2;
   x=tg1.GetX();
