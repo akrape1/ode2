@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-def RK1Solve(f, y0, nsteps, x0, xmax):
+def RK1Solve(f, y0, nsteps, x0, xmax) -> np.array:
     h = (xmax - x0) / nsteps  # step size
     x = x0                     # independent variable
     y = y0                     # dependent variable to plot vs x

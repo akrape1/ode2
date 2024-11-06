@@ -1,6 +1,6 @@
 import ROOT as r
 
-def RK1Solve(f, y0, nsteps, x0, xmax):
+def RK1Solve(f, y0, nsteps, x0, xmax) -> r.TGraph:
   
     h=(xmax-x0)/nsteps     # step size
     x=x0                   # independent variable
