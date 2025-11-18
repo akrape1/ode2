@@ -21,6 +21,15 @@ double fun2(double x, double y){
   return -y/x-2/(x*x);  // f = y'(x,y) = -y(x)/x - 2/x^2 
 }                       // -2*log(|x|)/x+2/x  ; with initial condition y(0)=2
 
+double fun3(double x, double y){
+  (void)x;              
+  return y*y;    //exact: y = 1/1-x   
+}                      
+
+double fun4(double x, double y){
+  return y; //exact: y = exp(x)
+}    
+
 int main(int argc, char **argv){
   TApplication theApp("App", &argc, argv); // init ROOT App for displays
 
